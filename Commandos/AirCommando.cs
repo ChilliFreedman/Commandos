@@ -16,5 +16,10 @@ namespace Commandos
         {
             Console.WriteLine("Parachuting champion");
         }
+
+        public override  void Attack()
+        {
+            Console.WriteLine($"An aircommando named {this.CodeName} is attacking now.");
+        }
     }
 }

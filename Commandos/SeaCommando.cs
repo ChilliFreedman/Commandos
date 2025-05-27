@@ -17,5 +17,10 @@ namespace Commandos
         {
             Console.WriteLine("swimming champion");
         }
+
+        public override void Attack()
+        {
+            Console.WriteLine($"A seacommando named {this.CodeName} is attacking now.");
+        }
     }
 }

@@ -34,7 +34,7 @@ namespace Commandos
             this.Status = "hiding";
 
         }
-        public void Attack()
+        public virtual void Attack()
         {
             Console.WriteLine($"A commando named {this.CodeName} is attacking now.");
         }

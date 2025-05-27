@@ -16,7 +16,7 @@ namespace Commandos
             Console.WriteLine(comando1.SayName("COLONEL"));
             Console.WriteLine(comando1.SayName("aaa"));
             Console.WriteLine(comando1.CodeName);
-            comando1.CodeName = "agent b";
+            comando1.CodeName = "agent u";
             Console.WriteLine(comando1.CodeName);
             Console.WriteLine(comando1.Status);
             foreach(string tool in comando1.Tools)
@@ -36,15 +36,23 @@ namespace Commandos
             Console.WriteLine(weapon1.BuletsLeft);
             weapon1.Shoot();
 
-            AirCommando a = new AirCommando("aa", "s");
-            Console.WriteLine(a.Status);
-            a.parachuting();
+            AirCommando aircommando1 = new AirCommando("dan", "agent b");
+            Console.WriteLine(aircommando1.Status);
+            Console.WriteLine(aircommando1.SayName("GENERAL"));
+            aircommando1.parachuting();
+            //aircommando1.Attack();
 
-            SeaCommando b = new SeaCommando("aa", "s");
-            Console.WriteLine(a.Status);
-            Console.WriteLine(a.SayName("GENERAL"));
-            b.swimming();
+            SeaCommando seaCommando1 = new SeaCommando("moshe", "agent c");
+            Console.WriteLine(seaCommando1.Status);
+            Console.WriteLine(seaCommando1.SayName("GENERAL"));
+            //seaCommando1.Attack();
+            seaCommando1.swimming();
 
+            Commando[] commandos = new Commando[] { comando1, aircommando1, seaCommando1, };
+            foreach (Commando commando in commandos)
+            {
+                commando.Attack();
+            }
         }
     }
 }
