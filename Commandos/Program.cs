@@ -11,10 +11,19 @@ namespace Commandos
         static void Main(string[] args)
         {
             //בדיקת שדות מתודות של מחלקת קומנדו
-            Commando comando1 = new Commando("jon","erez");
-            Console.WriteLine(comando1.Name);
+            Commando comando1 = new Commando("jon","agent a");
+            Console.WriteLine(comando1.SayName("GENERAL"));
+            Console.WriteLine(comando1.SayName("COLONEL"));
+            Console.WriteLine(comando1.SayName("aaa"));
+            Console.WriteLine(comando1.CodeName);
+            comando1.CodeName = "agent b";
             Console.WriteLine(comando1.CodeName);
             Console.WriteLine(comando1.Status);
+            foreach(string tool in comando1.Tools)
+            {
+                Console.WriteLine(tool);
+            }
+            
             comando1.Walk();
             Console.WriteLine(comando1.Status);
             comando1.Hide();

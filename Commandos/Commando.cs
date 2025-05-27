@@ -8,8 +8,8 @@ namespace Commandos
 {
     internal class Commando
     {
-        public string Name;
-        public string CodeName;
+        private string Name;
+        public string CodeName { get; set; }
         public string[] Tools;
         public string Status;
 
@@ -17,7 +17,7 @@ namespace Commandos
         public Commando(string name, string codename)
         {
             this.Name = name;
-            this.CodeName = codename;
+            this.CodeName = codename ;
             this.Status = "standing";
             this.Tools = new string[] { "Hammer", "chisel", "rope", "bag", "water bottle" };
         }
@@ -38,6 +38,24 @@ namespace Commandos
         {
             Console.WriteLine($"A commando named {this.CodeName} is attacking now.");
         }
+
+        public string SayName(string commanderRank)
+        {
+            if (commanderRank == "GENERAL")
+            {
+                return this.Name;
+            }
+            else if (commanderRank == "COLONEL")
+            {
+                return this.CodeName;
+            }
+            return "The information is classified and cannot be received.";
+
+
+
+        }
+
         
+       
     }
 }
