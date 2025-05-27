@@ -35,7 +35,16 @@ namespace Commandos
             Console.WriteLine(weapon1.Manufacturer);
             Console.WriteLine(weapon1.BuletsLeft);
             weapon1.Shoot();
-            
+
+            AirCommando a = new AirCommando("aa", "s");
+            Console.WriteLine(a.Status);
+            a.parachuting();
+
+            SeaCommando b = new SeaCommando("aa", "s");
+            Console.WriteLine(a.Status);
+            Console.WriteLine(a.SayName("GENERAL"));
+            b.swimming();
+
         }
     }
 }
