@@ -1,0 +1,7 @@
+C:\Users\חילי פרידמן\source\repos\Commandos\Commandos\bin\Debug\Commandos.exe.config
+C:\Users\חילי פרידמן\source\repos\Commandos\Commandos\bin\Debug\Commandos.exe
+C:\Users\חילי פרידמן\source\repos\Commandos\Commandos\bin\Debug\Commandos.pdb
+C:\Users\חילי פרידמן\source\repos\Commandos\Commandos\obj\Debug\Commandos.csproj.AssemblyReference.cache
+C:\Users\חילי פרידמן\source\repos\Commandos\Commandos\obj\Debug\Commandos.csproj.CoreCompileInputs.cache
+C:\Users\חילי פרידמן\source\repos\Commandos\Commandos\obj\Debug\Commandos.exe
+C:\Users\חילי פרידמן\source\repos\Commandos\Commandos\obj\Debug\Commandos.pdb

@@ -10,7 +10,7 @@ namespace Commandos
     {
         public string Name;
         public string CodeName;
-        public string[] Tools = { "Hammer", "chisel", "rope", "bag", "water bottle" };
+        public string[] Tools;
         public string Status;
 
 
@@ -19,6 +19,7 @@ namespace Commandos
             this.Name = name;
             this.CodeName = codename;
             this.Status = "standing";
+            this.Tools = new string[] { "Hammer", "chisel", "rope", "bag", "water bottle" };
         }
 
         public void Walk()
